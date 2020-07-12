@@ -1,9 +1,9 @@
-@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'register', 'title' => __('Dashboard')])
+@extends('admin.layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'register', 'title' => __('Dashboard')])
 
 @section('content')
 <div class="container" style="height: auto;">
   <div class="row align-items-center">
-    <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
+    <div style="z-index: 99999;">
       <form class="form" method="POST" action="{{ route('register') }}">
         @csrf
 
