@@ -106,7 +106,9 @@ class TicketController extends Controller
      */
     public function show(Ticket $ticket)
     {
-        dump($ticket);
+
+        return view('admin.tickets.show', compact('ticket'));
+
     }
 
     /**

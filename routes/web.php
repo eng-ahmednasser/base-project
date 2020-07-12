@@ -21,6 +21,9 @@ Route::group(
         Route::get('/', function () {
             return view('site.welcome');
         });
+        Route::get('/home', function () {
+            return view('site.welcome');
+        })->name('home');
 
         Auth::routes();
 
